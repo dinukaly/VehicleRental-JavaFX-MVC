@@ -1,0 +1,4 @@
+package javafx.test.javafx;
+
+public class BillView {
+}

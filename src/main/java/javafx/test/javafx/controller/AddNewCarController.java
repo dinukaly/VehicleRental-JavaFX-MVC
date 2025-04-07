@@ -1,0 +1,60 @@
+package javafx.test.javafx.controller;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import javafx.test.javafx.dto.VehicleDto;
+import javafx.test.javafx.model.VehicleModel;
+
+import java.io.IOException;
+
+public class AddNewCarController {
+    public AnchorPane addCar;
+    @FXML
+    private TextField txtBrand;
+
+    @FXML
+    private TextField txtModel;
+
+    @FXML
+    private TextField txtQty;
+
+    @FXML
+    private TextField txtPrice;
+
+    @FXML
+    void cancel(ActionEvent event) {
+        try {
+            Stage stage = (Stage) this.addCar.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/javafx/test/javafx/mainDashBoard.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setScene(scene);
+        } catch (
+                IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void save(ActionEvent event) {
+        String brand = txtBrand.getText();
+        String model = txtModel.getText();
+        int qty = Integer.parseInt(txtQty.getText());
+        double price = Integer.parseInt(txtPrice.getText());
+
+        boolean result = VehicleModel.addVehicle(new VehicleDto(brand, model, qty, price));
+
+        if (result == true) {
+            System.out.println("Vehicle added successfully");
+        }
+        else {
+            System.out.println("Vehicle addition failed");
+        }
+
+    }
+
+}

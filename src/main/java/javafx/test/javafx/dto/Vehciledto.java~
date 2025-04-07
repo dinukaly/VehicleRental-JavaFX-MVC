@@ -1,0 +1,16 @@
+package javafx.test.javafx.dto;
+
+public class Vehciledto {
+    private String brand;
+    private String model;
+    private int qty;
+    private double price;
+
+    public Vehciledto(String brand, String model, int qty, double price) {
+        this.brand = brand;
+        this.model = model;
+        this.qty = qty;
+        this.price = price;
+    }
+
+}

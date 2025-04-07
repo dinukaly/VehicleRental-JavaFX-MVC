@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="viewCarsPane" prefHeight="400.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.test.javafx.controller.ViewCarsController">
+   <children>
+      <TableView fx:id="tableId" layoutX="118.0" layoutY="86.0" prefHeight="239.0" prefWidth="561.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="120.0" text="Brand" />
+            <TableColumn prefWidth="141.0" text="Model" />
+            <TableColumn prefWidth="88.0" text="Quantity" />
+            <TableColumn prefWidth="133.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="108.0" layoutY="22.0" prefHeight="43.0" prefWidth="176.0" text="Car List">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

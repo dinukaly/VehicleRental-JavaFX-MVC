@@ -1,0 +1,30 @@
+package javafx.test.javafx.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBConnection {
+    private static DBConnection dbConnection;
+    private Connection connection;
+    private DBConnection() throws ClassNotFoundException, SQLException {
+
+        //load Driver class to ram
+        Class.forName("com.mysql.cj.jdbc.Driver");
+
+        //establish connection with DB
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/afsd", "root", "Default890");
+
+    }
+
+    public static DBConnection getInstance() throws SQLException, ClassNotFoundException { // singleton
+        if (dbConnection == null) {
+            dbConnection = new DBConnection();
+        }
+        return dbConnection;
+    }
+
+    public Connection getConnection() {
+        return connection;
+    }
+}

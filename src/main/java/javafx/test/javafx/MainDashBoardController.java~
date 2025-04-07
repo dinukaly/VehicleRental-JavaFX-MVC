@@ -1,0 +1,30 @@
+package javafx.test.javafx.controller;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class MainDashBoardController {
+    public AnchorPane dashBoardPane;
+
+    public void addNewCar(ActionEvent actionEvent) {
+        try {
+            Stage stage = (Stage) dashBoardPane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("save-form.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showCars(ActionEvent actionEvent) {
+    }
+
+    public void deleteCars(ActionEvent actionEvent) {
+    }
+}

@@ -1,0 +1,39 @@
+package javafx.test.javafx.controller;
+
+import javafx.collections.FXCollections;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.test.javafx.tm.ItemTM;
+
+import java.util.List;
+
+public class BillViewController {
+    @FXML
+    private TableView<ItemTM> billTable; // TableView in your FXML
+    @FXML
+    private TableColumn<ItemTM, String> itemNameColumn; // Add columns
+    @FXML
+    private TableColumn<ItemTM, Integer> quantityColumn;
+    @FXML
+    private TableColumn<ItemTM, Double> priceColumn;
+    @FXML
+    private Label totalLabel; // Label for the total price
+
+    public void initialize() {
+        // Bind columns to ItemTM properties
+        itemNameColumn.setCellValueFactory(new PropertyValueFactory<>("itemName"));
+        quantityColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
+        priceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
+    }
+
+    public void setBillData(List<ItemTM> items, double totalPrice) {
+
+        if (items != null) {
+            billTable.setItems(FXCollections.observableArrayList(items)); // Set data to the table
+            totalLabel.setText("Total: " + totalPrice); // Update total price
+        }
+    }
+}

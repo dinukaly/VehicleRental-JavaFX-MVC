@@ -1,0 +1,90 @@
+package javafx.test.javafx.controller;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.test.javafx.dto.Vehicledto;
+import javafx.test.javafx.model.VehicleModel;
+import javafx.test.javafx.tm.ItemTM;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class OrderViewController implements Initializable {
+    public TextField txtId;
+    public TextField txtBrand;
+    public TextField txtModel;
+    public TextField txtOnHand;
+    public TextField txtPrice;
+    public TextField qtyWant;
+    public Label subTotal;
+    public TableView<ItemTM> tableView;
+    private
+
+    private ObservableList<ItemTM> items = FXCollections.observableArrayList();
+
+    public void searchVehicle(ActionEvent actionEvent) {
+        try {
+            int id = Integer.parseInt(txtId.getText());
+            Vehicledto vehicle = VehicleModel.searchCar(id);
+
+            if (vehicle != null) {
+                txtBrand.setText(vehicle.getBrand());
+                txtModel.setText(vehicle.getModel());
+                txtOnHand.setText(String.valueOf(vehicle.getQty()));
+                txtPrice.setText(String.valueOf(vehicle.getPrice()));
+            } else {
+                new Alert(Alert.AlertType.WARNING, "Vehicle not found!").show();
+                txtBrand.clear();
+                txtModel.clear();
+                txtOnHand.clear();
+                txtPrice.clear();
+            }
+        } catch (NumberFormatException e) {
+            new Alert(Alert.AlertType.ERROR, "Invalid ID!").show();
+        }
+    }
+
+    public void addToCart(ActionEvent actionEvent) {
+        try {
+            int qty = Integer.parseInt(qtyWant.getText());
+            int onHandQty = Integer.parseInt(txtOnHand.getText());
+
+            if (qty <= 0 || qty > onHandQty) {
+                new Alert(Alert.AlertType.WARNING, "Invalid quantity!").show();
+                return;
+            }
+
+            String brand = txtBrand.getText();
+            String model = txtModel.getText();
+            double unitPrice = Double.parseDouble(txtPrice.getText());
+            double total = unitPrice * qty;
+
+            itemTMS.add(new ItemTM(brand, model, qty, unitPrice, total));
+            tableView.setItems(items);
+        } catch (NumberFormatException e) {
+            new Alert(Alert.AlertType.ERROR, "Invalid input!").show();
+        }
+    }
+
+    private void updateSubTotal() {
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        tableView.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("brand"));
+        tableView.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("model"));
+        tableView.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("qty"));
+        tableView.getColumns().get(3).setCellValueFactory(new PropertyValueFactory<>("unitPrice"));
+        tableView.getColumns().get(4).setCellValueFactory(new PropertyValueFactory<>("totalPrice"));
+
+        tableView.setItems(items);
+    }
+
+    public void placeOrder(ActionEvent actionEvent) {
+
+    }
+}

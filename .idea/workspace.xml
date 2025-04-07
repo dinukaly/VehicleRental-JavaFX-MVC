@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d49176bb-3ed9-4777-bd22-811be61fbc5f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/AddNewCarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/DeleteCarViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/MainDashBoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/OrderViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/SignUpViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/UpdateCarViewConrtoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/controller/ViewCarsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/db/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/dto/OrderDetailDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/dto/VehicleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/model/OrderModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/model/VehicleModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/tm/ItemTM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javafx/test/javafx/tm/VehicleTM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/SignUp-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/addNewCar-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/deleteCar-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/login-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/mainDashBoard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/order-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/save-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/updateCar-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javafx/test/javafx/viewCars-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2oI5LcdWlt5fiVpe7Ncq2JMlP0i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/ACPT/Workspace/java-fx-text01/src/main/java/javafx/test/javafx&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/ACPT/RepairDash&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javafx.test.javafx.HelloApplication" />
+      <module name="java-fx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javafx.test.javafx.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d49176bb-3ed9-4777-bd22-811be61fbc5f" name="Changes" comment="" />
+      <created>1730544194314</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730544194314</updated>
+      <workItem from="1730544195390" duration="5304000" />
+      <workItem from="1730550243052" duration="1353000" />
+      <workItem from="1730967895908" duration="16911000" />
+      <workItem from="1731098207676" duration="18000" />
+      <workItem from="1731132972575" duration="3969000" />
+      <workItem from="1731392225863" duration="666000" />
+      <workItem from="1731738242000" duration="12303000" />
+      <workItem from="1732132541608" duration="53000" />
+      <workItem from="1732134420800" duration="4269000" />
+      <workItem from="1732191012359" duration="73000" />
+      <workItem from="1732201509537" duration="32000" />
+      <workItem from="1732976666098" duration="44866000" />
+      <workItem from="1733627856972" duration="23801000" />
+      <workItem from="1733658942383" duration="5178000" />
+      <workItem from="1733760474536" duration="5000" />
+      <workItem from="1734072426359" duration="172000" />
+      <workItem from="1734072617944" duration="22000" />
+      <workItem from="1734073185946" duration="817000" />
+      <workItem from="1734074041420" duration="37000" />
+      <workItem from="1734074215499" duration="53000" />
+      <workItem from="1734074283814" duration="13228000" />
+      <workItem from="1734161496695" duration="32968000" />
+      <workItem from="1734677555915" duration="13243000" />
+      <workItem from="1735046807910" duration="475000" />
+      <workItem from="1735053866762" duration="1068000" />
+      <workItem from="1735058158881" duration="7314000" />
+      <workItem from="1735155627806" duration="5980000" />
+      <workItem from="1735237837361" duration="22513000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchMethodException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

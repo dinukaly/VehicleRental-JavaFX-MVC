@@ -1,0 +1,44 @@
+package javafx.test.javafx.controller;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Alert;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class LoginController {
+    @FXML
+    private TextField txtPassword;
+    String userName = "admin";
+    String password = "admin";
+
+    @FXML
+    private TextField txtUsername;
+    public AnchorPane loginAnchorPane;
+
+    @FXML
+    public void save(ActionEvent event) throws IOException {
+        if (txtUsername.getText().equals(userName) && txtPassword.getText().equals(password)) {
+            try {
+                Stage stage = (Stage) this.loginAnchorPane.getScene().getWindow();
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/javafx/test/javafx/mainDashBoard.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+                stage.setScene(scene);
+            } catch (
+                    IOException e) {
+                e.printStackTrace();
+            }
+
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Login Failed");
+            alert.setContentText("Invalid passoword or username");
+            alert.showAndWait();
+        }
+    }
+}
